@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import ModuleADemo from "../components/ModuleADemo";
+import VForDemo from "../components/VForDemo";
+import HelloWorld from "../components/HelloWorld";
 
 Vue.use(Router);
 
@@ -20,6 +21,16 @@ export default new Router({
       path: '/',
       name: 'ModuleADemo',
       component: ModuleADemo
+    },
+    {
+      path: '/fordemo',
+      name: 'VForDemo',
+      component: VForDemo
+    },
+    {
+      path: '/helloWorld',
+      name: 'HelloWorld',
+      component: HelloWorld
     }
   ]
 })

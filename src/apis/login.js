@@ -1,5 +1,5 @@
 const login = [
-    {name: 'createLogin', url: '/login', method: 'POST'},
+    {name: 'createLogin', url: '/login'},
     {name: 'createLogout', url: '/logout'}
 ];
 

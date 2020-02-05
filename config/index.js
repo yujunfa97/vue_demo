@@ -10,9 +10,15 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
+    // 例如：http://localhost:8080/apis/login  ->  http://localhost/apis/login
+    // 如果开启pathRewrite，如下所示则为：http://localhost:8080/apis/login  ->  http://localhost/login
     proxyTable: {
-      '/apis': {
-        target: 'http://localhost',
+      '/apis': {    // 对/apis开头的请求做转发处理
+        target: 'http://localhost',   //转发到http://localhost上
+        changeOrigin: true,
+        /*pathRewrite:{
+          '^/apis': '' // 把url中的/apis去掉
+        }*/
       }
     },
 
