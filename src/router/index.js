@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import ModuleADemo from "../components/ModuleADemo";
 import VForDemo from "../components/VForDemo";
 import HelloWorld from "../components/HelloWorld";
+import FatherDemo from "../components/FatherDemo";
 
 Vue.use(Router);
 
@@ -31,6 +32,11 @@ export default new Router({
       path: '/helloWorld',
       name: 'HelloWorld',
       component: HelloWorld
+    },
+    {
+      path: '/fs',
+      name: 'FatherDemo',
+      component: FatherDemo
     }
   ]
 })
